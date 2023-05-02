@@ -28,7 +28,7 @@ func (se *servicesCmd) Execute([]string) error {
 		m[v.Service] = struct{}{}
 	}
 	keys := []string{}
-	for k, _ := range m {
+	for k := range m {
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)

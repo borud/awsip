@@ -51,7 +51,7 @@ func Read(reader io.Reader) (*Ranges, error) {
 	return &ranges, nil
 }
 
-// Read ranges from file
+// ReadFile reads ranges from file
 func ReadFile(filename string) (*Ranges, error) {
 	f, err := os.Open(filename)
 	if err != nil {

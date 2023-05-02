@@ -1,12 +1,12 @@
 package util
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/jessevdk/go-flags"
 )
 
+// FlagParse is a necessity because the error handling for the flag parser stinks
 func FlagParse(options any) {
 	p := flags.NewParser(options, flags.Default)
 	if _, err := p.Parse(); err != nil {
@@ -34,7 +34,7 @@ func FlagParse(options any) {
 				os.Exit(1)
 
 			default:
-				fmt.Printf("%v [%d]\n", err, flagsErr.Type)
+				// fmt.Printf("%v [%d]\n", err, flagsErr.Type)
 				os.Exit(0)
 			}
 		}
