@@ -1,4 +1,4 @@
-module github.com/borud/aws-ip-ranges
+module github.com/borud/awsip
 
 go 1.20
 

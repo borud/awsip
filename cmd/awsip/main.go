@@ -11,8 +11,8 @@ import (
 	"path"
 	"time"
 
-	"github.com/borud/aws-ip-ranges/pkg/awsip"
-	"github.com/borud/aws-ip-ranges/pkg/util"
+	"github.com/borud/awsip/pkg/awsip"
+	"github.com/borud/awsip/pkg/util"
 )
 
 //lint:file-ignore SA5008 Ignore duplicate struct tags

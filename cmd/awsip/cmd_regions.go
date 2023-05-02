@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/borud/aws-ip-ranges/pkg/util"
+	"github.com/borud/awsip/pkg/util"
 	"github.com/jedib0t/go-pretty/v6/table"
 )
 
