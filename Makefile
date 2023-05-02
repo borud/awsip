@@ -21,6 +21,7 @@ dep-install:
 	@go install github.com/mgechev/revive@latest
 
 release: test
+	@go mod tidy
 	@cd cmd/awsip && GOOS=linux GOARCH=amd64 go build -ldflags=$(LDFLAGS) -o ../../bin/awsip
 	@cd bin && zip awsip.amd64-linux.zip awsip && rm awsip
 
